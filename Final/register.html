@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body class="background">
+
+  <nav style="opacity:0.9;" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="home.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="challenges.html">Challenges<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="mealplan.html">Meal Planning</a>
+        </li>
+        <li class="nav-item active">
+            <div class="dropdown">
+                <button  style="border:none; background-color: transparent; color:black;" class="nav-link" disabled>Workouts</button>
+                <div class="dropdown-content">
+                  <a href="begginer.html">Begginer</a>
+                  <a href="intermediate.html">Intermediate</a>
+                  <a href="advanced.html">Advanced</a>
+                </div>
+              </div>
+        </li>
+        <li style="float:right !important;" class="nav-item active side">
+          <a class="nav-link" href="user.html">User</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="form-box">
+        <div class="pavadinimas">
+            <button type="button" class="pavadinimo-text" style="font-size:20px;cursor:auto;" disabled >Register to track your progress</button>
+        </div>
+
+        <!-- <div class="social-icons">
+            <img src="fb.png">
+            <img src="tw.png">
+            <img src="gp.png">
+        </div> -->
+   <form action="/register" method="post" id="register" class="form">
+      <div>
+       <input autocomplete="off" type="text" class="login-field" name="username" placeholder="Username" required>
+      </div>
+      <div>
+        <input autocomplete="off" type="text" class="login-field" name="email" placeholder="Email" required>
+      </div>
+      <div>
+        <input autocomplete="off" type="password" class="login-field" name="password" placeholder="Password" required>
+      </div>
+      <div>
+        <input autocomplete="off" type="password" class="login-field" name="confirmation" placeholder="Confirm Password" required>
+      </div>
+
+      <input type="checkbox" class="check-box" required><span class="check-box-text" style="bottom: 50px;">I agree to the terms and conditions</span>
+
+      <button type="submit" class="btn-submit" style="margin-top:20px;">Register</button>
+    </form>
+
+</body>
+</html>
